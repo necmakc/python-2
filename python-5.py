@@ -6,14 +6,14 @@
 #     A = 2; B = 3 -> 8 
 # -------------------------------------------------------------------------------------------------------
 
-def Exponent(num_A, num_B) -> int:
+def exponent(num_A, num_B) -> int:
     if num_B<2:
         return num_A
     num_B -= 1
-    return num_A * Exponent(num_A,num_B)
+    return num_A * exponent(num_A,num_B)
 
 num_A, num_B = int(input("Введите число: ")),int(input("Введите степень: "))
-print(Exponent(num_A,num_B))
+print(exponent(num_A,num_B))
 
 # -------------------------------------------------------------------------------------------------------
 # Задача 2: Напишите рекурсивную функцию sum(a, b), возвращающую сумму двух целых неотрицательных чисел.
