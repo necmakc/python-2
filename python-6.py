@@ -11,7 +11,8 @@ num_length = int(
 num_diff = int(input("Введите разность: "))
 array = []
 array.append(num_one)
-array = [array[0] + (i - 1)*num_diff for i in range(num_one, num_length+1)]
+for i in range(1,num_length):
+    array.append(array[0] + (i - 1) * num_diff)
 print(array)
 
 # -------------------------------------------------------------------------------------------------------
